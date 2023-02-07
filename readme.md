@@ -1,5 +1,5 @@
 <h1 align="center">
-   <img src='.github/assets/feracode.png' style="border-radius:50%"  alt="Feracode"/>
+   <img src='.github/assets/feracode.png' style="border-radius:50%"  alt="Feracode" width="200" height="200"/>
 </h1>
 
 <h1 align="center">Feracode Challenge</h1>
