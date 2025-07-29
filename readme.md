@@ -159,5 +159,5 @@ Below is a table describing the available commit types:
 ## License <a name='license'></a>
 
 This project is licensed under the MIT License.
-See the [LICENSE](LICENSE.md) file for more details.
+See the [LICENSE](LICENSE) file for more details.
 
