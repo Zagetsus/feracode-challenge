@@ -17,161 +17,147 @@
 
 ---
 
-Este projeto está arquitetado na biblioteca `React Native`, [leia a documentação](https://reactnative.dev/) para mais
-detalhes ou veja o resumo existente na sessão `Configurações > React Native`.
+This project is built with the `React Native` library.  
+[Check the documentation](https://reactnative.dev/) for more details or see the summary in the `Configurations > React Native` section.
 
-- Conteúdo
-    - [Sobre o projeto](#about)
-        - [Requisitos](#requirements)
-        - [Instalação](#install)
-        - [Rodando o Projeto](#run)
-    - [Configurações](#configs)
+- Contents
+    - [About the project](#about)
+        - [Requirements](#requirements)
+        - [Installation](#install)
+        - [Running the Project](#run)
+    - [Configurations](#configs)
         - Scripts
         - Typescript
         - React Native
-    - [Padrões de commits](#commit-patterns)
-    - [Licença](#license)
+    - [Commit standards](#commit-patterns)
+    - [License](#license)
 
-## Sobre o projeto <a name="about"></a>
-Aplicativo para o torcedor ficar antenado sobre tudo que está acontecendo nas ligas de futebol do mundo todo. Nele é possível checar como seu time do coração está performando!
+## About the project <a name="about"></a>
 
-### *Requisitos:* <a name="requirements"></a>
+A mobile app for football fans to stay up to date with everything happening in football leagues around the world.  
+You can check how your favorite team is performing!
+
+### *Requirements:* <a name="requirements"></a>
 
 - [NodeJs `>16.0.0`](https://nodejs.org/en/)
-
 - [Yarn](https://classic.yarnpkg.com/en/docs/install/#mac-stable)
 
-### Instalação: <a name="install"></a>
+### Installation: <a name="install"></a>
 
-Após clonar o projeto, no terminal faça:
+After cloning the project, run the following in your terminal:
 
 ```bash 
 cd feracode_challenge 
 yarn # or yarn install
-```
 
-*Note:* Após a instalação deve-se rodar o lint no projeto para fazer uma varredura dos padrões:
+
+*Note:* After installation, run lint to check code style and formatting:
 
 ```bash
-# Para realizar o lint em todo o projeto.
-
+# To run lint across the whole project
 yarn lint
 ```
 
-### Rodando o Projeto: <a name="run"></a>
+### Running the Project: <a name="run"></a>
 
-Na linha de comando faça:
+In the terminal, run:
 
-```bash 
+```bash
 yarn android
 ```
 
-
-## Configurações <a name="configs"></a>
+## Configurations <a name="configs"></a>
 
 <details>
   <summary><b>Scripts</b> (click to show)</summary>
 
-O projeto conta com diversos scripts de linha de comando para uso via terminal, i.e., `yarn <SCRIPT>`
-ou `npm run <SCRIPT>`
+The project contains several CLI scripts available via terminal, e.g., `yarn <SCRIPT>` or `npm run <SCRIPT>`
 
-*DETALHAMENTO*
-
-| Script      | Descrição                                                                                          |
-|-------------|----------------------------------------------------------------------------------------------------|
-| android     | Builda e inicia o servidor de desenvolvimento com hot auto-reload no ambiente Android              |
-| ios         | Builda e inicia o servidor de desenvolvimento com hot auto-reload no ambiente IOS                  |
-| test        | Roda os testes do projeto                                                                          |
-| lint        | Roda o ESLINT para conferir o styleguide do código, corrigindo automaticamente erros simples       |
+| Script  | Description                                                                  |
+| ------- | ---------------------------------------------------------------------------- |
+| android | Builds and starts the development server with hot auto-reload for Android    |
+| ios     | Builds and starts the development server with hot auto-reload for iOS        |
+| test    | Runs project tests                                                           |
+| lint    | Runs ESLINT to check the code styleguide and automatically fix simple errors |
 
 </details>
 
 <details>
   <summary><b>Typescript</b> (click to show)</summary>
 
-Esta arquitetura utiliza [*Typescript*](https://www.typescriptlang.org/) como linguagem de codificação. Todas as
-features disponíveis pelo framework estão em Typescript e são altamente extensiveis, o que torna todo o código produzido
-super flexível para o desenvolvimento de softwares.
+This architecture uses [*Typescript*](https://www.typescriptlang.org/) as the main development language.
+All framework features are written in TypeScript and are highly extensible, making the codebase flexible for long-term development.
 
-Apesar de adicionar uma estrutura diferente há sintaxe do javascript e que muitos programadores poderão não estar
-habitualidos a usar, TS trás vários benefícios a codificação:
+While the syntax may differ from JavaScript and be unfamiliar to some developers, TypeScript brings many benefits:
 
-- Suporte [intellisense](https://code.visualstudio.com/docs/editor/intellisense) para prover auto-completo, informações
-  de parametros, informações rápidas, lista de membros, etc., tudo a nível de IDEs de código-fonte.
-- Melhor tooling para debug do desenvolvedor, fazendo verificações de erros e garantias de tipagens ao codificar.
-- Adição de suporte para design patterns como Abstract, Factories, Decorators, Singles, etc., para facilitar a gerência
-  das dependências de forma padronizada e reutilizável.
-- Fornece um código mais confiável e explícito, menos sucetível a erros durante a programação.
-- Entre outros.
+* [IntelliSense support](https://code.visualstudio.com/docs/editor/intellisense) for auto-complete, parameter hints, quick info, member lists, etc.
+* Better tooling for debugging, ensuring type safety and early error detection.
+* Support for design patterns like Abstract, Factory, Decorator, Singleton, etc., improving code organization and reusability.
+* Provides more reliable, explicit, and maintainable code.
+* And much more.
 
-O projeto já possui um linter e o prettier configurados para garantir boa parte da formatação desejada no padrão de
-código definido. Arquivos de configuração `.prettierrc` e `.eslintrc.js` explicitam as configurações que dentre as
-poucas decisões definem: *utilização obrigatória de aspas SIMPLES* e a *não-utilização de ponto e vírgula*.
+The project includes `eslint` and `prettier` configurations to enforce code formatting and style.
+Files like `.prettierrc` and `.eslintrc.js` define rules such as:
+*mandatory use of single quotes* and *no semicolons*.
 
-Um arquivo `.editorconfig` também dita as configurações acerca da formatação de arquivos: *identação com 2 espaços*,
-com *codificação em UTF-8* e com *linha em branco ao final dos arquivos*.
+An `.editorconfig` file also enforces:
+
+* *2-space indentation*
+* *UTF-8 encoding*
+* *Newline at the end of each file*
 
 </details>
 
 <details>
 <summary><b>React Native</b> (click to show)</summary>
 
-O React Native funciona como uma biblioteca e facilitador de recursos de JavaScript que possibilita o desenvolvimento de
-aplicações mobile, tanto para Android como para iOS.
+React Native is a JavaScript framework that allows you to build native mobile apps for both Android and iOS.
 
-Antes do React Native já existiam algumas soluções híbridas tais como o Apache Cordova (open source), o Adobe PhoneGap (
-que utiliza o Cordova também) e o MobileFirst Platform Foundation da IBM.
+Before React Native, hybrid solutions like Apache Cordova (open-source), Adobe PhoneGap (based on Cordova), and IBM’s MobileFirst existed.
 
-Para soluções nativas, o profissional de desenvolvimento que precisava rodar uma aplicação para os dois sistemas
-operacionais tinha em mãos um projeto muito mais complexo, já que utilizava as linguagens específicas (Java para Android
-e Objective-C para iOS), além de não conseguir aproveitar quase nada entre os dois códigos.
+However, for native solutions, developers often needed to build apps for both platforms separately, using Java (Android) and Objective-C (iOS), without code reuse.
 
-Essa sempre foi uma questão na hora de empresas aplicarem projetos de apps mobile, já que aumentavam o número de
-profissionais envolvidos e também os custos dos projetos. Também, muitas vezes, era preciso de uma equipe especializada
-em JavaScript e outra em Objective-C, fazendo com que aplicações fossem criadas em paralelo, já que os códigos não
-tinham correspondência. Nesse aspecto, o React Native veio para facilitar (e muito!) o desenvolvimento de aplicativos
-que devem rodar nos dois sistemas operacionais.
+This increased complexity, team size, and costs.
+It was common to require one JavaScript team and another Objective-C team to build similar apps in parallel.
 
-*Links úteis*
+React Native solved this by allowing developers to write a single codebase in JavaScript (with native bindings) that runs on both Android and iOS.
 
-- [Documentação](https://reactnative.dev/)
-- [Atomic Design](https://bradfrost.com/blog/post/atomic-web-design/)
-- [Componentização](https://inside.contabilizei.com.br/componentização-no-front-end-f40b0b85143f)
+*Useful links:*
+
+* [Documentation](https://reactnative.dev/)
+* [Atomic Design](https://bradfrost.com/blog/post/atomic-web-design/)
+* [Componentization](https://inside.contabilizei.com.br/componentização-no-front-end-f40b0b85143f)
 
 </details>
 
+## Commit Standards <a name="commit-patterns"></a>
 
-## Padrões de commit <a name="commit-patterns"></a>
+This project follows the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) specification as a standard for commit messages.
 
-Quando falamos de padrões de commit não podemos esquecer
-o [conventional commit](https://www.conventionalcommits.org/en/v1.0.0/), ele já é utilizando como padrão universal de
-commits e a sua documentação já exemplifica bem como é trabalhado as confirmações das tarefas no projeto.
+In addition to that, it enforces some custom rules:
 
-Fora o formato padronizado que do convetional, o projeto possui algumas outras peculariedades.
+* **Commit Language**: English only
+* **Length**: Between 10 and 100 characters
+* **Format**: `[COMMIT_TYPE]: update README to add developer tips`
 
-**exemplo:**
+Below is a table describing the available commit types:
 
-- **Liguagem do commit**: `Somente nomenclatura em inglês`
-- **Comprimento**: `Mínimo de 10 e no máximo 100 caracteres `
-- **Formato**: `[COMMIT_TYPE]: update README to add developer tips`
+| **COMMIT\_TYPE** | DESCRIPTION                                                        |
+| ---------------- | ------------------------------------------------------------------ |
+| **feat**         | A new feature                                                      |
+| **fix**          | A bug fix                                                          |
+| **docs**         | Documentation changes                                              |
+| **style**        | Code style changes (spacing, linting, commas, etc)                 |
+| **refactor**     | Code changes that neither fix a bug nor add a feature              |
+| **test**         | Adding or updating tests                                           |
+| **chore**        | Changes to the build process or auxiliary tools                    |
+| **perf**         | Performance improvements                                           |
+| **ci**           | Continuous integration related changes                             |
+| **build**        | Changes that affect the build system or external dependencies      |
+| **temp**         | Temporary commits not meant to be merged or added to the changelog |
 
-Agora, segue a tabela com a descrição de cada tipo de commit:
+## License <a name='license'></a>
 
-| **COMMIT_TYPE** | DESCRIPTION |
-|-----------------|---------------------------------------------------------------------------------------------------------------------|
-| **feat**        | uma nova feature. | 
-| **fix**         | Ajuste de bugs. | 
-| **docs**        | Ajustes na documentação. | 
-| **style**       | Ajustes que não alteram a funcionalidade do código, por exemplo (espaços, lint, add vírgulas, etc). | 
-| **refactor**    | Ajustes que não são features ou bugs. | 
-| **test**        | Ajustes ou implementação de testes. | 
-| **chore**       | Ajustes no processo de build, ferramentas auxiliares e outras coisas relacionadas ao ambiente de desenvolvimento. | 
-| **perf**        | Ajustes de performance do projeto. | 
-| **ci**          | Ajustes em scripts ou processos de CI. | 
-| **build**       | Ajustes que afetam diretamente o*build* ou dependencies do projeto (example scopes: gulp, broccoli, npm). | 
-| **temp**        | Commits temporários que não serão mergiados e/ou não serão incluidos no CHANGELOG. |
+This project is licensed under the MIT License.
+See the [LICENSE](LICENSE.md) file for more details.
 
-
-## Licença <a href='license'></a>
-
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
